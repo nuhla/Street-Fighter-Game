@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+android:background="@drawable/bak5"
+ >
+
+    <EditText
+        android:id="@+id/emailtxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:hint="@string/email" />
+
+      <Button
+          android:id="@+id/button1"
+          android:layout_width="110dp"
+          android:layout_height="30dp"
+          android:layout_alignBaseline="@+id/button2"
+          android:layout_alignBottom="@+id/button2"
+          android:layout_alignLeft="@+id/messagetxt"
+          android:layout_toLeftOf="@+id/button2"
+          android:background="@drawable/gradiant3"
+          android:text="send" />
+
+      <Button
+          android:id="@+id/button2"
+          android:layout_width="110dp"
+         android:layout_height="30dp"
+          android:layout_alignRight="@+id/messagetxt"
+          android:layout_below="@+id/messagetxt"
+          android:background="@drawable/gradiant3"
+          android:text="cancel" />
+
+      <EditText
+          android:id="@+id/messagetxt"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/emailtxt"
+          android:layout_centerHorizontal="true"
+          android:ems="10"
+          android:hint="@string/message"
+          android:inputType="textMultiLine"
+          android:lines="5" />
+
+</RelativeLayout>
+

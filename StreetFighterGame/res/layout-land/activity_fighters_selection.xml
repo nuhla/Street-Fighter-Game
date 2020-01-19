@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images" >
+
+    <LinearLayout
+        android:id="@+id/settingfighitinglayout"
+        android:layout_width="250dp"
+        android:layout_height="220dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="15dp"
+        android:gravity="center_horizontal"
+        android:background="@drawable/gridviewshap"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="#fffff0"
+            android:text="@string/fightingtext" />
+        <LinearLayout
+        android:id="@+id/innerlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gridviewshap"
+        android:orientation="horizontal">
+    <ImageView
+            android:id="@+id/fighter1imagv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/backimg2" />
+    
+     <ImageView
+            android:id="@+id/fighter2imagv"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+              android:layout_margin="5dp"
+            android:background="@drawable/backimg2" />
+      </LinearLayout>
+     
+     <ImageButton
+            android:id="@+id/fighternextbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:background="@drawable/nextbtn"
+         	 android:src="@drawable/next_btn" />
+
+    </LinearLayout>
+    
+    
+        
+
+    
+
+    <LinearLayout
+        android:id="@+id/fightergridviewlayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/settingfighitinglayout"
+        android:background="@drawable/gridviewshap"
+        android:orientation="vertical" >
+
+        <GridView
+            android:id="@+id/fightersgridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numColumns="3" >
+
+        </GridView>
+
+    </LinearLayout>
+
+</RelativeLayout>
